@@ -128,6 +128,9 @@ main :: proc() {
 	
 	//~ Buddy Allocator
 	
+	// GB Article 6
+	// It does not compile. Maybe I need a newer odin release.
+	
 	when false {
 		buddy: mem.Buddy_Allocator;
 		mem.buddy_allocator_init(&buddy, data[:], 4);
@@ -140,9 +143,15 @@ main :: proc() {
 	
 	//~ Dynamic Pool
 	
+	// Same as default temp_allocator but poorly named
+	
 	//~ Mutex Allocator
 	
+	// Not explained in any of the GB articles, it's just a wrapper
+	
 	//~ Rollback Stack
+	
+	// IDK. Maybe I'll read the source code.
 	
 	//~ Tracking Allocator
 	
